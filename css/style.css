@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1574790335676-2a2bb9d70d08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")bottom no-repeat;
+  background-size: cover;
+  display: grid;
+  width: 100%;
+  height: 113vh;
+  grid-auto-rows: 1fr 1fr 2fr 7fr;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+.top{
+  text-align: center;
+  padding-top: 4rem;
+}
+h1{
+  font-size: 45px;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  color: purple;
+}
+.top p{
+  font-size: 25px;
+  font-style: italic;
+}
+.birthday{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.birthday h2{
+  margin-right: 2rem;
+}
+.birthday label{
+  font-size: 22px;
+  margin-right: 0.5rem;
+}
+input{
+  width:4rem;
+  height: 2rem;
+}
+
+#button{
+  height:3.5rem;
+  width: 3.5rem;
+  margin-left: 2rem;
+  background: white;
+  border-radius: 30px;
+}
+#button:hover{
+  background-color: #e71d36;
+}
+.horoscope{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.horoscope img{
+  border: 5px solid white;
+  padding: 0.5rem;
+  height:11rem;
+  width: 11rem;
+  float: left;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+#horoscopeP{
+  float: left;
+  width:70%;
+  padding: 0.6rem;
+  font-size: 15px;
+}
+.icons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  height: auto;
+}
+.icons img{
+  height:9rem;
+  width: 9rem;
+  padding: 0.6rem;
+
+}
+div{
+  display: none;
+}
+.icons img:hover{
+  outline: 2px solid white;
+}
+
+@media (min-width:450px){
+  #horoscopeP{
+    width:50%;
+    font-size: 1rem;
+  }
+}
